@@ -4,7 +4,7 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 36px;
     position: fixed;
     bottom: 24px;
     right: 24px;
@@ -13,10 +13,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 64px;
-    width: 64px;
+    height: 40px;
+    width: 40px;
     transform: rotate(0);
     transition: .3s ease;
+    z-index: 2;
 }
 
 .CreateToDoButton:hover {
