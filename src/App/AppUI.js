@@ -7,6 +7,7 @@ import {ToDoList} from "../ToDoList";
 import {ToDoItem} from "../ToDoItem";
 import {Modal} from "../Modal";
 import { TodoForm } from "../ToDoForm";
+import Spinner from "../Spinner";
 function AppUI() {
     const {
         error,
@@ -27,7 +28,7 @@ function AppUI() {
         <ToDoSearch/>
         <ToDoList>
             {error && <p>Hubo un error</p>}
-            {loading && <p>Estamos cargando</p>}
+            {loading && <Spinner/>}
             {(!loading && !searchedTodos)&&<p>Crea tu primer ToDo</p>}
             {searchedTodos.map(todo => (
                 <ToDoItem 
